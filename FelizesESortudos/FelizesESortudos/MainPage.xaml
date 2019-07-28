@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FelizesESortudos"
+             x:Class="FelizesESortudos.MainPage">
+
+    <StackLayout BackgroundColor="#FFF" Padding="30" Spacing="30">
+       
+        <Image Source="logo.png" x:Name="logo" />
+       
+        <Entry Placeholder="Digite o número" 
+               PlaceholderColor="#c0272d" 
+               x:Name="txtNumero" 
+               Keyboard="Numeric"
+               MaxLength="5"/>
+        
+        <Button Text="Meu Número é feliz e Sortudo?" 
+                TextColor="#FFFFFF" 
+                BackgroundColor="#c0272d"
+                x:Name="btnCalcular"
+                BorderRadius="10"/>
+        
+        <Label x:Name="lblResultado"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+               FontSize="24"
+               FontAttributes="Bold"
+               />
+    </StackLayout>
+
+</ContentPage>
